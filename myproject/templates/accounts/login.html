@@ -1,0 +1,21 @@
+<!-- templates/accounts/login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kirish</title>
+</head>
+<body>
+    <h2>Kirish</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="password">Parol:</label>
+        <input type="password" name="password" required><br>
+
+        <button type="submit">Kirish</button>
+    </form>
+    <p>Hisobingiz yo‘qmi? <a href="{% url 'register' %}">Ro‘yxatdan o‘tish</a></p>
+</body>
+</html>

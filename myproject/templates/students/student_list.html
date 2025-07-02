@@ -1,0 +1,16 @@
+<!-- myapp/templates/students/student_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Talabalar ro'yxati</title>
+</head>
+<body>
+    <h1>Talabalar</h1>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.name }} - {{ student.age }} yosh</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
